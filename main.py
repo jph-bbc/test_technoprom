@@ -105,11 +105,8 @@ class ExampleApp(QtWidgets.QMainWindow, form.Ui_MainWindow):
         while item is not None:
             texts.insert(0, item.text(0))
             item = item.parent()
-            print(texts)
         path = "\\".join(texts)
-        print(path)
         path = root_directory + path
-        print(path)
 
         self.directoryPath.setText(path)
         self.browse_folder(path)
